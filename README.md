@@ -47,10 +47,17 @@ No build process required - works directly in modern browsers!
 
 ⌨️ Keyboard Shortcuts
 Shortcut	Action
+
 → or Space	Increment counter
+
 ←	Decrement counter
+
 R	Reset counter
+
 D	Toggle dark mode
+
 M	Toggle sound
+
 Ctrl + Z	Undo last action
+
 Ctrl + Y	Redo last action
