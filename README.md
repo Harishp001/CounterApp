@@ -3,8 +3,9 @@
 A feature-rich counter application with history tracking, undo/redo functionality, and interactive visualizations.
 
 ![Counter App Screenshot](https://github.com/Harishp001/CounterApp/blob/da4aa96b085e66b2ac9d334c6b3f449d35fe6ac4/screenshot/Screenshot%202025-02-11%20002937.png)
+![Counter App Screenshot](https://github.com/Harishp001/CounterApp/blob/5904ddfa7c14cecd01ceb61a5950415c8776e181/screenshot/Screenshot%202025-02-11%20002910.png)
 ![Counter App Screenshot](https://github.com/Harishp001/CounterApp/blob/da4aa96b085e66b2ac9d334c6b3f449d35fe6ac4/screenshot/Screenshot%202025-02-11%20002926.png)
-![Counter App Screenshot]()<!-- Add screenshot if available -->
+<!-- Add screenshot if available -->
 
 ## Features
 
