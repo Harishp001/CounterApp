@@ -1,0 +1,195 @@
+:root {
+    --bg-color: #f0f0f0;
+    --card-bg: white;
+    --text-color: #333;
+    --accent-color: #646cff;
+    --info-bg: #f8f8f8;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --chart-grid: #e0e0e0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --text-color: #ffffff;
+    --accent-color: #818cf8;
+    --info-bg: #3d3d3d;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --chart-grid: #404040;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#theme-switch, #sound-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#theme-switch:hover, #sound-toggle:hover {
+    transform: rotate(360deg);
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.counter-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+}
+
+#count-value {
+    transition: transform 0.2s ease;
+}
+
+.count-change {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.card {
+    padding: 1em;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#reset {
+    background-color: #ff4646;
+    border-color: #ff4646;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #ff3333;
+}
+
+.counter-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--info-bg);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.counter-info p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+#highest-count, #total-clicks {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.history-graph {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--info-bg);
+    border-radius: 8px;
+}
+
+.history-graph h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+#historyChart {
+    width: 100% !important;
+    max-height: 300px;
+}
+
+.keyboard-shortcuts {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid var(--accent-color);
+}
+
+.keyboard-shortcuts h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.keyboard-shortcuts ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.keyboard-shortcuts li {
+    color: var(--text-color);
+    background-color: var(--info-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Counter App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="theme-toggle">
+            <button id="theme-switch">🌙</button>
+            <button id="sound-toggle" title="Toggle Sound">🔊</button>
+        </div>
+        <h1>Counter App</h1>
+        <div class="counter-display">
+            <span id="count-value">0</span>
+        </div>
+        <div class="card">
+            <button id="undo" type="button" title="Press Ctrl+Z">↩️</button>
+            <button id="decrement" type="button" title="Press Left Arrow">-</button>
+            <button id="counter" type="button" title="Press Space">Count is 0</button>
+            <button id="increment" type="button" title="Press Right Arrow">+</button>
+            <button id="redo" type="button" title="Press Ctrl+Y">↪️</button>
+        </div>
+        <div class="card">
+            <button id="reset" type="button" title="Press R">Reset</button>
+        </div>
+        <div class="counter-info">
+            <p>Highest count: <span id="highest-count">0</span></p>
+            <p>Total clicks: <span id="total-clicks">0</span></p>
+            <p>Last updated: <span id="last-updated">Never</span></p>
+        </div>
+        <div class="history-graph">
+            <h3>Count History</h3>
+            <canvas id="historyChart"></canvas>
+        </div>
+        <div class="keyboard-shortcuts">
+            <h3>Keyboard Shortcuts</h3>
+            <ul>
+                <li>⬅️ Left Arrow: Decrease</li>
+                <li>➡️ Right Arrow: Increase</li>
+                <li>Space: Increase</li>
+                <li>R: Reset</li>
+                <li>D: Toggle Dark Mode</li>
+                <li>M: Toggle Sound</li>
+                <li>Ctrl+Z: Undo</li>
+                <li>Ctrl+Y: Redo</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
